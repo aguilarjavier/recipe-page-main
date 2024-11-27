@@ -14,6 +14,7 @@ body{
     background-color: var(--Stone100);
     display: flex;
     justify-content: center;
+    color: var(--Stone600);
 }
 
 .image{
@@ -26,7 +27,33 @@ h1{
 }
 
 h2{
+    color: var(--Brown800);
+}
+
+h3{
     color: var(--Stone600);
+}
+
+ol {
+    list-style: none;
+    color: var(--Brown800);
+    counter-reset: item;
+}
+
+ol li{
+    color: var(--Stone600);
+    counter-increment: item;
+    position: relative;
+}
+
+ol li::before{
+    position: absolute;
+    left: -20px;
+    color: var(--Brown800);
+    content: counter(item);
+    display: inline-block;
+    text-align: center;
+    margin-right: 10x;
 }
 
 .card{
@@ -34,7 +61,8 @@ h2{
     background-color: var(--Rose50);
     border-radius: 20px;
     padding: 30px;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     width: 600px;
 }
 
