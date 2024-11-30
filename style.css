@@ -10,6 +10,7 @@
     --Rose50: hsl(330, 100%, 98%);
 
     font-size: 16px;
+    font-weight: 400;
 } 
 
 body{
@@ -39,30 +40,14 @@ h3{
 p{
     font-family: 'Outfit', serif;
 }
-ol {
-    list-style: none;
-    color: var(--Brown800);
-    counter-reset: item;
-}
 
 li{
     font-family: 'Outfit', serif;
+    font-weight: 700;
 }
 
-ol li{
-    color: var(--Stone600);
-    counter-increment: item;
-    position: relative;
-}
-
-ol li::before{
-    position: absolute;
-    left: -20px;
-    color: var(--Brown800);
-    content: counter(item);
-    display: inline-block;
-    text-align: center;
-    margin-right: 10x;
+li span{
+    font-weight: 400;
 }
 
 .card{
