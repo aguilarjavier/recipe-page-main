@@ -27,10 +27,12 @@ body{
 
 h1{
     color: var(--Stone900);
+    font-family: 'Young Serif', serif;
 }
 
 h2{
     color: var(--Brown800);
+    font-family: 'Young Serif', serif;
 }
 
 h3{
@@ -59,6 +61,32 @@ li span{
 hr {
     border: 1px solid var(--Stone150);
     color: var(--Stone150);
+}
+
+table{
+    font-family: 'Outfit', serif;
+    width: 100%;
+    padding-left: 0;
+    border-spacing: 0;
+}
+
+
+table tr td{
+    border-bottom: 1px solid var(--Stone150);
+    padding: 15px 0 15px 0;
+}
+
+table tr .unit{
+    padding-left: 30px;
+}
+
+table tr .value{
+    color: var(--Brown800);
+    font-weight: 600;
+}
+
+table tr .last{
+    border-bottom: 0px;
 }
 
 .card{
